@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Home App UI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="screen screen-1">
+            <div class="ui--statusbar">
+                <span>7:31</span>
+                <span>81%</span>
+            </div>
+            <div class="ui--screen-header">
+                <span class="ui--screen-title">SmartGhar</span>
+                <div class="ui--dropdown-menu">
+                    <button class="dropdown-toggle arrow">I'm home</button>
+                    <ul class="dropdown-item">
+                        <li>Cafe vibes</li>
+                        <li>I'm Leaving</li>
+                        <li>Good Morning</li>
+                        <li>Good Night</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="ui--horizontal-scroll">
+                <div class="ui--card ui--card-square">
+                    <span class="ui-card--title">Temperature</span>
+                    <span class="ui-card--value">18<span class="suffix">°C</span></span>
+                </div>
+                <div class="ui--card ui--card-square">
+                    <span class="ui-card--title">Humidity</span>
+                    <span class="ui-card--value">46<span class="suffix">%</span></span>
+                </div>
+            </div>
+            <div class="ui--screen-section">
+                <div class="ui--section-title">
+                    <span>Devices</span>
+                    <div class="ui--dropdown-menu">
+                        <button class="dropdown-toggle">&hellip;</button>
+                        <ul class="dropdown-item right">
+                            <li>Refresh</li>
+                            <li>Manage Devices</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="ui--stack">
+                    <div class="ui--card">
+                        <div class="ui-card--icon-lightbulb"></div>
+                        <div>
+                            <span class="ui-card--title">Living Room Lights</span>
+                            <span class="ui-card--subtitle">3 on, 1 off</span>
+                        </div>
+                        <div class="ui--toggle">
+                            <input type="checkbox" id="living-room-lights">
+                            <label for="living-room-lights">Toggle</label>
+                        </div>
+                    </div>
+                    <div class="ui--card">
+                        <div class="ui-card--icon icon-speaker"></div>
+                        <div>
+                            <span class="ui-card--title">Kitchen Speaker</span>
+                            <span class="ui-card--subtitle">Now Playing: Lag Jaa Gale</span>
+                        </div>
+                        <div class="ui--toggle">
+                            <input type="checkbox" id="kitchen-speaker">
+                            <label for="kitchen-speaker">Toggle</label>
+                        </div>
+                    </div>
+                    <div class="ui--card">
+                        <div class="ui-card--icon icon-lock"></div>
+                        <div>
+                            <span class="ui-card--title">Front Door</span>
+                            <span class="ui-card--subtitle">Battery at 96%</span>
+                        </div>
+                        <div class="ui--toggle">
+                            <input type="checkbox" id="front-door">
+                            <label for="front-door">Toggle</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="screen screen-2">
+            <div class="ui--statusbar">
+                <span>7:31</span>
+                <span>81%</span>
+            </div>
+            <div class="ui--screen-header">
+                <span class="ui--screen-title">Temperature</span>
+                <div class="ui--dropdown-menu">
+                    <button class="dropdown-toggle arrow">Living Room</button>
+                    <ul class="dropdown-item">
+                        <li>Kitchen</li>
+                        <li>Dining Room</li>
+                        <li>Master Bedroom</li>
+                        <li>Office</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="ui--screen-section">
+                <div class="ui--dial-wrapper">
+                    <div class="ui-dial-outer">
+                        <div id="range--selector"></div>
+                        <div id="range"></div>
+                    </div>
+                    <div class="ui--dial-inner">
+                        <span class="ui--dial-status">&nbsp;&nbsp;&nbsp;Heating to</span>
+                        <span class="ui--dial-value">19<span class="suffix">°C</span></span>
+                    </div>
+                </div>
+                <div class="ui--screen-section">
+                    <div class="ui--stack-horizontal" style="margin-top: 36px;">
+                        <div class="ui--detail">
+                            <span class="ui--detail-title">Indoors</span>
+                            <span class="ui--detail-value">18<span class="suffix">°C</span></span>
+                        </div>
+                        <div class="vertical-separator"></div>
+                        <div class="ui--detail">
+                            <span class="ui--detail-title">Outdoors</span>
+                            <span class="ui--detail-value">5<span class="suffix">°C</span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui--screen-section">
+                    <div class="ui--stack-horizontal" style="margin-top: 36px;">
+                        <div class="ui--card ui--card-square-sm">
+                            <div class="ui--button">
+                                <input type="checkbox" id="eco-mode" checked>
+                                <label for="eco-mode" class="icon-eco">Eco Mode</label>
+                            </div>
+                        </div>
+                        <div class="ui--card ui--card-square-sm">
+                            <div class="ui--button">
+                                <input type="checkbox" id="air-flow">
+                                <label for="air-flow" class="icon-air">Air Flow</label>
+                            </div>
+                        </div>
+                        <div class="ui--card ui--card-square-sm">
+                            <div class="ui--button">
+                                <input type="checkbox" id="fan-speed">
+                                <label for="fan-speed" class="icon-air">Fan Speed</label>
+                            </div>
+                        </div>
+                        <div class="ui--card ui--card-square-sm">
+                            <div class="ui--button">
+                                <input type="checkbox" id="humidity">
+                                <label for="humidity" class="icon-water">Humidity</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="screen screen-3">
+            <div class="ui--statusbar">
+                <span>7:31</span>
+                <span>81%</span>
+            </div>
+            <div class="ui--screen-header">
+                <span class="ui--screen-title">Solar Heating</span>
+                <div class="ui--dropdown-menu">
+                    <button class="dropdown-toggle arrow">Today</button>
+                    <ul class="dropdown-item">
+                        <li>Yesterday</li>
+                        <li>This Week</li>
+                        <li>Last Week</li>
+                        <li>This Month</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="ui--screen-section">
+                <div class="ui--stack-horizontal">
+                    <div class="ui--detail">
+                        <span class="ui--detail-title">Current Load</span>
+                        <span class="ui--detail-value">2<span class="suffix">kW</span></span>
+                    </div>
+                    <div class="vertical-separator"></div>
+                    <div class="ui--detail">
+                        <span class="ui--detail-title">Consumption</span>
+                        <span class="ui--detail-value">27.4<span class="suffix">kWh</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="ui--screen-section">
+                <div class="ui--graph"></div>
+                <div class="ui-graph--marker"></div>
+            </div>
+            <div class="ui--screen-section">
+                <div class="ui--horizontal-scroll">
+                    <div class="ui--card ui--card-square">
+                        <div class="ui--detail">
+                            <span class="ui--detail-title">Capacity</span>
+                            <span class="ui--detail-value">12<span class="suffix">kWh</span></span>
+                        </div>
+                        <div class="ui--chart-pie" style="--p:85">
+                            <span>85%</span>
+                        </div>
+                    </div>
+                    <div class="ui--card ui--card-square">
+                        <div class="ui--detail">
+                            <span class="ui--detail-title">Charge Rate</span>
+                            <span class="ui--detail-value">2<span class="suffix">kW/h</span></span>
+                        </div>
+                        <div class="ui--chart-pie" style="--p:65">
+                            <span>4h <br>To Full</span>
+                        </div>
+                    </div>
+                    <div class="ui--card ui--card-square">
+                        <div class="ui--detail">
+                            <span class="ui--detail-title">Efficiency</span>
+                            <span class="ui--detail-value">95<span class="suffix">%</span></span>
+                        </div>
+                        <div class="ui--chart-pie" style="--p:95">
+                            <span>95%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
